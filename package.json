@@ -7,6 +7,9 @@
   "directories": {
     "example": "examples"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "node scripts/server.js",
     "build": "rimraf dist && webpack --config scripts/webpack.config.prod.js",
