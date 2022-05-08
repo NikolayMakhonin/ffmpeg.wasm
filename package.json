@@ -1,7 +1,7 @@
 {
-  "name": "@ffmpeg/ffmpeg",
+  "name": "@flemist/ffmpeg.wasm-st",
   "version": "0.10.1",
-  "description": "FFmpeg WebAssembly version",
+  "description": "Single thread version of npm module @ffmpeg/ffmpeg@0.10.1",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "directories": {
