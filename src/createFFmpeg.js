@@ -62,6 +62,7 @@ module.exports = (_options = {}) => {
         wasmPath,
       } = await getCreateFFmpegCore(options);
       Core = await createFFmpegCore({
+        noExitRuntime: true,
         /*
          * Assign mainScriptUrlOrBlob fixes chrome extension web worker issue
          * as there is no document.currentScript in the context of content_scripts
@@ -88,7 +89,7 @@ module.exports = (_options = {}) => {
           return prefix + path;
         },
       });
-      ffmpeg = Core.cwrap('proxy_main', 'number', ['number', 'number']);
+      ffmpeg = Core.cwrap('main', 'number', ['number', 'number']);
       log('info', 'ffmpeg-core loaded');
     } else {
       throw Error('ffmpeg.wasm was loaded, you should not load it again, use ffmpeg.isLoaded() to check next time.');
