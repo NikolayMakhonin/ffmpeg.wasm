@@ -1,3 +1,5 @@
+This repo just a copy of https://github.com/ffmpegwasm/ffmpeg.wasm with little changes for support single thread core
+
 <p align="center">
   <a href="#">
     <img alt="ffmpeg.wasm" width="128px" height="128px" src="https://github.com/NikolayMakhonin/ffmpeg.wasm-st/raw/master/docs/images/ffmpegwasm-icon.png">
