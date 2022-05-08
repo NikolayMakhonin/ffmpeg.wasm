@@ -31,7 +31,7 @@ createFFmpeg is a factory function that creates a ffmpeg instance.
 ```javascript
 const { createFFmpeg } = FFmpeg;
 const ffmpeg = createFFmpeg({
-  corePath: "./node_modules/@ffmpeg/core/dist/ffmpeg-core.js",
+  corePath: "./node_modules/@flemist/ffmpeg.wasm-core-st/dist/ffmpeg-core.js",
   log: true,
 });
 ```
